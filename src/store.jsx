@@ -12,6 +12,7 @@ export const useApp = () => useContext(Ctx);
 
 export function AppProvider({ children }) {
   const [s, setS] = useState(load);
+  const [notice, setNotice] = useState(false);
   useEffect(() => { try { localStorage.setItem(KEY, JSON.stringify(s)); } catch { /* ignore */ } }, [s]);
   useEffect(() => { document.documentElement.lang = s.lang; document.documentElement.dir = s.lang === 'ar' ? 'rtl' : 'ltr'; }, [s.lang]);
   useEffect(() => { Sfx.setOn(s.sound); }, [s.sound]);
@@ -19,7 +20,10 @@ export function AppProvider({ children }) {
 
   const t = useCallback((k, v) => tr(s.lang, k, v), [s.lang]);
   const pick = useCallback(o => pickL(s.lang, o), [s.lang]);
-  const say = useCallback((text, force) => Voice.say(text, s.lang, force), [s.lang]);
+  const say = useCallback((text, force) => {
+    const ok = Voice.say(text, s.lang, force);
+    if (!ok && (s.voice || force) && !Voice.has(s.lang)) setNotice(true);
+  }, [s.lang, s.voice]);
 
   const api = useMemo(() => {
     const total = ORDER.reduce((a, id) => a + (s.best[id] || 0), 0);
@@ -28,7 +32,8 @@ export function AppProvider({ children }) {
       rank: (p => p >= 85 ? 3 : p >= 65 ? 2 : p >= 35 ? 1 : 0)(total / 5),
       setLang: lang => setS(x => ({ ...x, lang })),
       toggleSound: () => setS(x => ({ ...x, sound: !x.sound })),
-      toggleVoice: () => setS(x => ({ ...x, voice: !x.voice })),
+      toggleVoice: () => { if (!s.voice && !Voice.has(s.lang)) setNotice(true); setS(x => ({ ...x, voice: !x.voice })); },
+      notice, clearNotice: () => setNotice(false),
       setTeam: team => setS(x => ({ ...x, team })),
       record: (id, points, counts = true) => {
         const prev = counts ? (s.best[id] || 0) : s.reflex;
@@ -42,7 +47,7 @@ export function AppProvider({ children }) {
       }),
       reset: () => setS(x => ({ ...x, best: {}, reflex: 0, lb: [] }))
     };
-  }, [s, t, pick, say]);
+  }, [s, t, pick, say, notice]);
 
   return <Ctx.Provider value={api}>{children}</Ctx.Provider>;
 }

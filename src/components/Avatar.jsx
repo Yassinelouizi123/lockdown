@@ -6,5 +6,5 @@ import nour from '../assets/avatars/nour.svg';
 const MAP = { sara, lina, omar, nour };
 
 export default function Avatar({ name, size = 48, className = '' }) {
-  return <img src={MAP[name]} width={size} height={size} alt="" className={`shrink-0 rounded-full border-2 border-ink bg-white ${className}`} />;
+  return <img src={MAP[name]} width={size} height={size} alt="" className={`aspect-square shrink-0 rounded-full border-2 border-ink bg-white object-cover ${className}`} />;
 }

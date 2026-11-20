@@ -30,16 +30,28 @@ export const Sfx = {
 let voiceOn = false;
 const VMAP = { fr: 'fr-FR', en: 'en-US', ar: 'ar-SA' };
 const clean = s => String(s).replace(/<[^>]+>/g, '').replace(/[\u{1F000}-\u{1FFFF}☀-➿️]/gu, '').replace(/[«»“”]/g, '');
+const hasTTS = () => 'speechSynthesis' in window;
+const voices = () => (hasTTS() ? speechSynthesis.getVoices() : []);
+if (hasTTS()) { voices(); speechSynthesis.addEventListener('voiceschanged', voices); }
+// Only use a voice that really matches the language: otherwise the browser reads Arabic/French with an English voice (garbled).
+const findVoice = lang => {
+  const c = voices().filter(v => v.lang.replace('_', '-').toLowerCase().startsWith(lang));
+  return c.find(v => /natural|online|google/i.test(v.name)) || c[0] || null;
+};
 export const Voice = {
-  setOn: v => { voiceOn = v; if (!v && 'speechSynthesis' in window) speechSynthesis.cancel(); },
+  has: lang => !!findVoice(lang),
+  setOn: v => { voiceOn = v; if (!v && hasTTS()) speechSynthesis.cancel(); },
+  /** Returns false when nothing could be spoken (no voice for this language). */
   say(text, lang, force) {
-    if ((!voiceOn && !force) || !('speechSynthesis' in window)) return;
+    if ((!voiceOn && !force) || !hasTTS()) return false;
+    const v = findVoice(lang);
+    if (!v) return false;
     speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(clean(text)); u.lang = VMAP[lang];
-    const v = speechSynthesis.getVoices().find(x => x.lang.toLowerCase().startsWith(u.lang.slice(0, 2)));
-    if (v) u.voice = v; speechSynthesis.speak(u);
+    const u = new SpeechSynthesisUtterance(clean(text)); u.voice = v; u.lang = v.lang;
+    setTimeout(() => speechSynthesis.speak(u), 60);
+    return true;
   },
-  stop() { if ('speechSynthesis' in window) speechSynthesis.cancel(); }
+  stop() { if (hasTTS()) speechSynthesis.cancel(); }
 };
 
 export function confetti() {

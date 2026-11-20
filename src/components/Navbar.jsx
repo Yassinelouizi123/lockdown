@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Microphone, MicrophoneSlash, ShieldCheck, SpeakerHigh, SpeakerSlash } from '@phosphor-icons/react';
 import { useApp } from '../store.jsx';
 
@@ -5,6 +6,7 @@ const LANGS = [['fr', 'FR'], ['en', 'EN'], ['ar', 'عربي']];
 
 export default function Navbar({ onHome }) {
   const a = useApp();
+  useEffect(() => { if (!a.notice) return; const id = setTimeout(a.clearNotice, 9000); return () => clearTimeout(id); }, [a.notice]); // eslint-disable-line
   const icon = 'grid size-9 place-items-center rounded-full border-2 border-ink bg-white transition hover:bg-lime';
   return (
     <header className="sticky top-0 z-40 border-b-2 border-ink bg-paper/95 backdrop-blur">
@@ -24,6 +26,7 @@ export default function Navbar({ onHome }) {
           <button onClick={a.toggleVoice} className={icon} title={a.t('ui.voice')} aria-label={a.t('ui.voice')}>{a.voice ? <Microphone size={18} weight="fill" /> : <MicrophoneSlash size={18} weight="bold" />}</button>
         </div>
       </div>
+      {a.notice && <div className="border-t-2 border-ink bg-[#ffe3a3] px-4 py-2 text-center text-sm font-semibold">{a.t('ui3.novoice')} <button onClick={a.clearNotice} className="ms-2 font-extrabold underline">OK</button></div>}
     </header>
   );
 }

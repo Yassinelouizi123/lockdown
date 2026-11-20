@@ -152,3 +152,12 @@ add('ui3', {
   en: { short: 'Scan, play, learn. 15 minutes.', flash: 'Flashcards', flashb: 'Flip the cards to remember the SAFE reflexes.', scores: 'My scores', qr: 'QR code', qrt: 'Scan to play', qrs: 'Open the games straight on your phone.', close: 'Close', know: 'Got it', again: 'Review', flip: 'Tap to flip', fdone: 'Cards done', fk: '{n}/8 remembered', fgo: 'Take the quick test', front: 'Question', back: 'Answer', back2: 'Back' },
   ar: { short: 'امسح، العب، تعلّم. 15 دقيقة.', flash: 'بطاقات المراجعة', flashb: 'اقلب البطاقات لتتذكر عادات SAFE.', scores: 'نتائجي', qr: 'رمز QR', qrt: 'امسح للعب', qrs: 'افتح الألعاب مباشرة على هاتفك.', close: 'إغلاق', know: 'عرفتها', again: 'أراجعها', flip: 'المس لقلب البطاقة', fdone: 'انتهت البطاقات', fk: '{n}/8 محفوظة', fgo: 'ابدأ الاختبار السريع', front: 'سؤال', back: 'جواب', back2: 'رجوع' }
 });
+
+add('ui3', {
+  fr: { novoice: 'Aucune voix pour cette langue n’est installée sur cet appareil : la lecture vocale est impossible ici. Essaie sur un téléphone.' },
+  en: { novoice: 'No voice for this language is installed on this device, so read-aloud can’t work here. Try on a phone.' },
+  ar: { novoice: 'لا يوجد صوت لهذه اللغة على هذا الجهاز، لذا لا تعمل القراءة الصوتية هنا. جرّب على هاتف.' }
+});
+add('osint', {
+  fr: { pub: 'Profil public' }, en: { pub: 'Public profile' }, ar: { pub: 'حساب عام' }
+});
