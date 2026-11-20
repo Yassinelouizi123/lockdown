@@ -21,8 +21,7 @@ export function AppProvider({ children }) {
   const t = useCallback((k, v) => tr(s.lang, k, v), [s.lang]);
   const pick = useCallback(o => pickL(s.lang, o), [s.lang]);
   const say = useCallback((text, force) => {
-    const ok = Voice.say(text, s.lang, force);
-    if (!ok && (s.voice || force) && !Voice.has(s.lang)) setNotice(true);
+    Voice.say(text, s.lang, force).then(ok => { if (!ok) setNotice(true); });
   }, [s.lang, s.voice]);
 
   const api = useMemo(() => {
@@ -32,7 +31,7 @@ export function AppProvider({ children }) {
       rank: (p => p >= 85 ? 3 : p >= 65 ? 2 : p >= 35 ? 1 : 0)(total / 5),
       setLang: lang => setS(x => ({ ...x, lang })),
       toggleSound: () => setS(x => ({ ...x, sound: !x.sound })),
-      toggleVoice: () => { if (!s.voice && !Voice.has(s.lang)) setNotice(true); setS(x => ({ ...x, voice: !x.voice })); },
+      toggleVoice: () => setS(x => ({ ...x, voice: !x.voice })),
       notice, clearNotice: () => setNotice(false),
       setTeam: team => setS(x => ({ ...x, team })),
       record: (id, points, counts = true) => {

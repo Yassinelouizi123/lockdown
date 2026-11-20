@@ -1,0 +1,782 @@
+[
+ {
+  "lang": "fr",
+  "hash": "9af339c3",
+  "text": "Remplacer a par @ et o par 0 rend un mot de passe très difficile à casser."
+ },
+ {
+  "lang": "fr",
+  "hash": "a3b4344d",
+  "text": "Faux. Les pirates connaissent ces astuces : P@ssw0rd est dans toutes leurs listes."
+ },
+ {
+  "lang": "fr",
+  "hash": "53f7a676",
+  "text": "Une phrase de 4 à 5 mots au hasard est souvent plus solide qu’un mot court avec des symboles."
+ },
+ {
+  "lang": "fr",
+  "hash": "1dd2e123",
+  "text": "Vrai ! La longueur est ce qui compte le plus, et une phrase se retient facilement."
+ },
+ {
+  "lang": "fr",
+  "hash": "2ce1ebcd",
+  "text": "Réutiliser un même mot de passe sur plusieurs sites est dangereux, même s’il est très fort."
+ },
+ {
+  "lang": "fr",
+  "hash": "49348524",
+  "text": "Vrai. Si un seul site fuit, les pirates essaient ce mot de passe partout."
+ },
+ {
+  "lang": "fr",
+  "hash": "6a6440dd",
+  "text": "Un site sérieux peut t’envoyer ton mot de passe actuel par e-mail si tu l’as oublié."
+ },
+ {
+  "lang": "fr",
+  "hash": "d616e753",
+  "text": "Faux. Un site sérieux ne connaît pas ton mot de passe : il te propose d’en créer un nouveau."
+ },
+ {
+  "lang": "fr",
+  "hash": "e3b64ad2",
+  "text": "Un code de double authentification reçu par SMS est aussi sûr qu’une clé de sécurité physique."
+ },
+ {
+  "lang": "fr",
+  "hash": "d40e328a",
+  "text": "Faux. Le SMS peut être détourné ; une clé physique ou une appli est bien plus sûre."
+ },
+ {
+  "lang": "fr",
+  "hash": "7fde4b2b",
+  "text": "Si ton e-mail apparaît dans une fuite de données, tu dois changer ton mot de passe, même si rien d’anormal ne s’est passé."
+ },
+ {
+  "lang": "fr",
+  "hash": "feb876c8",
+  "text": "Vrai. Les pirates peuvent attendre avant d’agir : change vite et active la 2FA."
+ },
+ {
+  "lang": "fr",
+  "hash": "f15b9cf9",
+  "text": "Il faut changer son mot de passe tous les jours pour être en sécurité."
+ },
+ {
+  "lang": "fr",
+  "hash": "07c7218b",
+  "text": "Faux. Change-le si tu as un doute ou une fuite. Changer sans cesse pousse à choisir des mots de passe faibles."
+ },
+ {
+  "lang": "fr",
+  "hash": "b0b33235",
+  "text": "Le nom de ton animal et ta date de naissance publiés en ligne peuvent aider à deviner tes mots de passe."
+ },
+ {
+  "lang": "fr",
+  "hash": "c7d42c6c",
+  "text": "Vrai. Ton profil public est une liste d’indices pour un pirate."
+ },
+ {
+  "lang": "fr",
+  "hash": "b8c5ce80",
+  "text": "Un gestionnaire de mots de passe est un coffre protégé par un seul mot de passe maître solide."
+ },
+ {
+  "lang": "fr",
+  "hash": "c4b54fcc",
+  "text": "Vrai. Tu retiens une seule phrase de passe, il retient tout le reste."
+ },
+ {
+  "lang": "fr",
+  "hash": "255b1182",
+  "text": "Le support technique peut te demander le code à 6 chiffres reçu par SMS pour vérifier ton identité ."
+ },
+ {
+  "lang": "fr",
+  "hash": "a60065b7",
+  "text": "Faux. Ce code est secret : personne de sérieux ne te le demandera jamais."
+ },
+ {
+  "lang": "fr",
+  "hash": "76567eaa",
+  "text": "Tu crées un mot de passe pour un nouveau compte."
+ },
+ {
+  "lang": "fr",
+  "hash": "142ab8a9",
+  "text": "Tu utilises le même mot de passe pour ton jeu et ton e-mail."
+ },
+ {
+  "lang": "fr",
+  "hash": "caf6e990",
+  "text": "Une appli te propose un code en plus pour protéger ton compte."
+ },
+ {
+  "lang": "fr",
+  "hash": "f0cb3a30",
+  "text": "Tu vas publier le nom de ton chat et ta date de naissance."
+ },
+ {
+  "lang": "fr",
+  "hash": "420c3a50",
+  "text": "Ton mot de passe est football2024 ."
+ },
+ {
+  "lang": "fr",
+  "hash": "1419e027",
+  "text": "Tu as 40 comptes et tu ne retiens pas tous tes mots de passe."
+ },
+ {
+  "lang": "fr",
+  "hash": "34b58654",
+  "text": "Un inconnu te demande le code reçu par SMS."
+ },
+ {
+  "lang": "fr",
+  "hash": "2895b2c2",
+  "text": "Tes stories montrent ton lycée, ton quartier et ton chat."
+ },
+ {
+  "lang": "fr",
+  "hash": "1b8e10dc",
+  "text": "La longueur et le hasard : une phrase de 5 mots ou 14 caractères et plus."
+ },
+ {
+  "lang": "fr",
+  "hash": "438222df",
+  "text": "Non. Les pirates connaissent ces astuces : il est cassé en moins d’une seconde."
+ },
+ {
+  "lang": "fr",
+  "hash": "b88d6162",
+  "text": "Si un site fuit, les autres comptes restent protégés."
+ },
+ {
+  "lang": "fr",
+  "hash": "1c94a87f",
+  "text": "Avec un gestionnaire de mots de passe : tu retiens une seule phrase de passe."
+ },
+ {
+  "lang": "fr",
+  "hash": "e719cbb7",
+  "text": "Elle ajoute un 2e verrou : même avec ton mot de passe, le pirate reste bloqué."
+ },
+ {
+  "lang": "fr",
+  "hash": "95c3555e",
+  "text": "Jamais. Ce code est la clé de ton compte, personne de sérieux ne le demande."
+ },
+ {
+  "lang": "fr",
+  "hash": "8a7e9cc1",
+  "text": "Le prénom d’un proche, ton animal, ta date de naissance, ta ville, ton équipe."
+ },
+ {
+  "lang": "fr",
+  "hash": "3098c406",
+  "text": "Change d’abord le mot de passe de ton e-mail, puis celui des autres comptes, et active la 2FA."
+ },
+ {
+  "lang": "fr",
+  "hash": "1c3e88c2",
+  "text": "Ton e-mail et ton mot de passe Biscuit2008 viennent d’apparaître dans une fuite de données. Tu utilises le même mot de passe pour ton e-mail, Instagram et ton compte de jeux."
+ },
+ {
+  "lang": "fr",
+  "hash": "2af93eea",
+  "text": "Que sécurises-tu EN PREMIER ?"
+ },
+ {
+  "lang": "fr",
+  "hash": "9dc13fa1",
+  "text": "L’e-mail est la clé maîtresse : celui qui le contrôle peut réinitialiser tous les autres comptes."
+ },
+ {
+  "lang": "fr",
+  "hash": "16279fd0",
+  "text": "Utile, mais si l’e-mail est pris, le pirate reprend Instagram quand il veut."
+ },
+ {
+  "lang": "fr",
+  "hash": "c6e4f485",
+  "text": "Attendre, c’est laisser le pirate agir le premier."
+ },
+ {
+  "lang": "fr",
+  "hash": "ce659e9d",
+  "text": "SecuTeam : activité suspecte sur ton compte. Pour l’annuler, réponds avec le code à 6 chiffres que tu viens de recevoir.. Un SMS arrive. Que fais-tu ?"
+ },
+ {
+  "lang": "fr",
+  "hash": "39762c8d",
+  "text": "Ce code est la clé de ton compte. Personne de sérieux ne te le demandera."
+ },
+ {
+  "lang": "fr",
+  "hash": "600f6139",
+  "text": "Piège ! Le pirate vient de demander ce code lui-même : tu lui ouvres la porte."
+ },
+ {
+  "lang": "fr",
+  "hash": "98f48a3d",
+  "text": "Les liens de ces SMS mènent souvent à de fausses pages qui volent tes identifiants."
+ },
+ {
+  "lang": "fr",
+  "hash": "f0736737",
+  "text": "Tu changes tes mots de passe. Comment ?"
+ },
+ {
+  "lang": "fr",
+  "hash": "62709655",
+  "text": "Costaud, oui, mais réutilisé : une seule fuite et tout retombe."
+ },
+ {
+  "lang": "fr",
+  "hash": "ddf8c494",
+  "text": "Les pirates testent automatiquement ces variantes en premier."
+ },
+ {
+  "lang": "fr",
+  "hash": "665de544",
+  "text": "Dernière étape : la double authentification (2FA). Laquelle choisis-tu ?"
+ },
+ {
+  "lang": "fr",
+  "hash": "08070469",
+  "text": "Très solide : le code reste sur ton téléphone et ne peut pas être détourné facilement."
+ },
+ {
+  "lang": "fr",
+  "hash": "5e6adb63",
+  "text": "Mieux que rien, mais un SMS peut être intercepté ou détourné (SIM swap)."
+ },
+ {
+  "lang": "fr",
+  "hash": "e6522ade",
+  "text": "Même un bon mot de passe peut fuiter. La 2FA bloque le pirate quand même."
+ },
+ {
+  "lang": "en",
+  "hash": "30fc380a",
+  "text": "Replacing a with @ and o with 0 makes a password very hard to crack."
+ },
+ {
+  "lang": "en",
+  "hash": "e176865d",
+  "text": "False. Hackers know these tricks: P@ssw0rd is in all their lists."
+ },
+ {
+  "lang": "en",
+  "hash": "9b46edbb",
+  "text": "A random phrase of 4–5 words is often stronger than a short word with symbols."
+ },
+ {
+  "lang": "en",
+  "hash": "b2daa926",
+  "text": "True! Length matters most, and a phrase is easy to remember."
+ },
+ {
+  "lang": "en",
+  "hash": "6f666884",
+  "text": "Reusing the same password on several sites is dangerous, even if it is very strong."
+ },
+ {
+  "lang": "en",
+  "hash": "15ec0fc1",
+  "text": "True. If one site leaks, hackers try that password everywhere."
+ },
+ {
+  "lang": "en",
+  "hash": "be2ec87f",
+  "text": "A serious website can email you your current password if you forgot it."
+ },
+ {
+  "lang": "en",
+  "hash": "eece787a",
+  "text": "False. A serious site doesn’t know your password: it lets you create a new one."
+ },
+ {
+  "lang": "en",
+  "hash": "9811638e",
+  "text": "A two-factor code received by SMS is as safe as a physical security key."
+ },
+ {
+  "lang": "en",
+  "hash": "6b3cdc0e",
+  "text": "False. SMS can be hijacked; a physical key or an app is much safer."
+ },
+ {
+  "lang": "en",
+  "hash": "487a0f4e",
+  "text": "If your email appears in a data breach, you should change your password even if nothing unusual happened."
+ },
+ {
+  "lang": "en",
+  "hash": "ddc43d7c",
+  "text": "True. Hackers may wait before acting: change it quickly and turn on 2FA."
+ },
+ {
+  "lang": "en",
+  "hash": "761e8249",
+  "text": "You must change your password every day to stay safe."
+ },
+ {
+  "lang": "en",
+  "hash": "f4cd80e5",
+  "text": "False. Change it if you suspect a leak. Constant changes push people to pick weak ones."
+ },
+ {
+  "lang": "en",
+  "hash": "faaed0d9",
+  "text": "Your pet’s name and birth date posted online can help someone guess your passwords."
+ },
+ {
+  "lang": "en",
+  "hash": "fa65b090",
+  "text": "True. Your public profile is a clue list for a hacker."
+ },
+ {
+  "lang": "en",
+  "hash": "bc063c17",
+  "text": "A password manager is a vault protected by a single strong master password."
+ },
+ {
+  "lang": "en",
+  "hash": "2847376b",
+  "text": "True. You remember one passphrase; it remembers everything else."
+ },
+ {
+  "lang": "en",
+  "hash": "a3f0aef7",
+  "text": "Tech support may ask for the 6-digit SMS code to verify your identity."
+ },
+ {
+  "lang": "en",
+  "hash": "392e6681",
+  "text": "False. That code is secret: nobody legitimate will ever ask for it."
+ },
+ {
+  "lang": "en",
+  "hash": "e4989d64",
+  "text": "You are creating a password for a new account."
+ },
+ {
+  "lang": "en",
+  "hash": "9d9c8299",
+  "text": "You use the same password for your game and your email."
+ },
+ {
+  "lang": "en",
+  "hash": "21850e16",
+  "text": "An app offers an extra code to protect your account."
+ },
+ {
+  "lang": "en",
+  "hash": "96c3318f",
+  "text": "You are about to post your cat’s name and your birth date."
+ },
+ {
+  "lang": "en",
+  "hash": "09d86554",
+  "text": "Your password is football2024."
+ },
+ {
+  "lang": "en",
+  "hash": "61bca0ef",
+  "text": "You have 40 accounts and cannot remember all your passwords."
+ },
+ {
+  "lang": "en",
+  "hash": "e2077adf",
+  "text": "A stranger asks for the code you received by SMS."
+ },
+ {
+  "lang": "en",
+  "hash": "ac4362b9",
+  "text": "Your stories show your school, your neighbourhood and your cat."
+ },
+ {
+  "lang": "en",
+  "hash": "e0ca0aa4",
+  "text": "Length and randomness: a 5-word passphrase or 14+ characters."
+ },
+ {
+  "lang": "en",
+  "hash": "937f0871",
+  "text": "No. Hackers know these tricks: it is cracked in under a second."
+ },
+ {
+  "lang": "en",
+  "hash": "4a81759c",
+  "text": "If one site leaks, your other accounts stay safe."
+ },
+ {
+  "lang": "en",
+  "hash": "1659d32f",
+  "text": "With a password manager: you remember a single passphrase."
+ },
+ {
+  "lang": "en",
+  "hash": "9d9cf50f",
+  "text": "It adds a second lock: even with your password the hacker stays blocked."
+ },
+ {
+  "lang": "en",
+  "hash": "afb2256e",
+  "text": "Never. That code is the key to your account, nobody legitimate asks for it."
+ },
+ {
+  "lang": "en",
+  "hash": "4a041497",
+  "text": "A loved one’s name, your pet, your birth date, your city, your team."
+ },
+ {
+  "lang": "en",
+  "hash": "10c09fea",
+  "text": "Change your email password first, then the others, and turn on 2FA."
+ },
+ {
+  "lang": "en",
+  "hash": "19fc61d2",
+  "text": "Your email and your password Biscuit2008 just appeared in a data breach. You use the same password for your email, Instagram and gaming account."
+ },
+ {
+  "lang": "en",
+  "hash": "7ef7ab53",
+  "text": "What do you secure FIRST?"
+ },
+ {
+  "lang": "en",
+  "hash": "39627467",
+  "text": "Email is the master key: whoever controls it can reset every other account."
+ },
+ {
+  "lang": "en",
+  "hash": "70644d79",
+  "text": "Useful, but if your email is taken the hacker can retake Instagram any time."
+ },
+ {
+  "lang": "en",
+  "hash": "db182477",
+  "text": "Waiting lets the hacker act first."
+ },
+ {
+  "lang": "en",
+  "hash": "10fd4b5d",
+  "text": "SecuTeam: suspicious activity on your account. To cancel it, reply with the 6-digit code you just received.. An SMS arrives. What do you do?"
+ },
+ {
+  "lang": "en",
+  "hash": "cc24dd6f",
+  "text": "That code is the key to your account. No real service will ask for it."
+ },
+ {
+  "lang": "en",
+  "hash": "0440e6ba",
+  "text": "Trap! The hacker just requested that code himself: you’d open the door for him."
+ },
+ {
+  "lang": "en",
+  "hash": "3bdca382",
+  "text": "Links in such SMS often lead to fake pages that steal your logins."
+ },
+ {
+  "lang": "en",
+  "hash": "c4ea25d4",
+  "text": "You change your passwords. How?"
+ },
+ {
+  "lang": "en",
+  "hash": "2764989c",
+  "text": "Strong, yes, but reused: a single leak and everything falls again."
+ },
+ {
+  "lang": "en",
+  "hash": "18172ad5",
+  "text": "Hackers automatically try these variants first."
+ },
+ {
+  "lang": "en",
+  "hash": "15aa9f4c",
+  "text": "Last step: two-factor authentication (2FA). Which one do you choose?"
+ },
+ {
+  "lang": "en",
+  "hash": "45632d41",
+  "text": "Very strong: the code stays on your phone and can’t be easily hijacked."
+ },
+ {
+  "lang": "en",
+  "hash": "2502391b",
+  "text": "Better than nothing, but an SMS can be intercepted or hijacked (SIM swap)."
+ },
+ {
+  "lang": "en",
+  "hash": "bce36e1d",
+  "text": "Even a good password can leak. 2FA still blocks the hacker."
+ },
+ {
+  "lang": "ar",
+  "hash": "f9acbee5",
+  "text": "استبدال a بـ @ و o بـ 0 يجعل كلمة المرور صعبة الكسر جدًا."
+ },
+ {
+  "lang": "ar",
+  "hash": "9ef4be1f",
+  "text": "خطأ. القراصنة يعرفون هذه الحيل: P@ssw0rd موجودة في كل قوائمهم."
+ },
+ {
+  "lang": "ar",
+  "hash": "f8e8b913",
+  "text": "جملة من 4 إلى 5 كلمات عشوائية غالبًا أقوى من كلمة قصيرة مع رموز."
+ },
+ {
+  "lang": "ar",
+  "hash": "4a695c83",
+  "text": "صحيح! الطول هو الأهم، والجملة سهلة الحفظ."
+ },
+ {
+  "lang": "ar",
+  "hash": "11187269",
+  "text": "إعادة استخدام نفس كلمة المرور في عدة مواقع خطر، حتى لو كانت قوية جدًا."
+ },
+ {
+  "lang": "ar",
+  "hash": "cfede5fe",
+  "text": "صحيح. إن تسرّب موقع واحد جرّب القراصنة كلمة المرور في كل مكان."
+ },
+ {
+  "lang": "ar",
+  "hash": "eff19aeb",
+  "text": "يمكن لموقع جدّي أن يرسل لك كلمة مرورك الحالية بالبريد إن نسيتها."
+ },
+ {
+  "lang": "ar",
+  "hash": "5a628ced",
+  "text": "خطأ. الموقع الجدّي لا يعرف كلمة مرورك: بل يتيح لك إنشاء كلمة جديدة."
+ },
+ {
+  "lang": "ar",
+  "hash": "88adcb79",
+  "text": "رمز المصادقة الثنائية عبر الرسائل النصية آمن مثل مفتاح الأمان المادي."
+ },
+ {
+  "lang": "ar",
+  "hash": "c0d94af7",
+  "text": "خطأ. الرسائل النصية قد تُحوَّل؛ والمفتاح المادي أو التطبيق أكثر أمانًا بكثير."
+ },
+ {
+  "lang": "ar",
+  "hash": "78405bdd",
+  "text": "إذا ظهر بريدك في تسرّب بيانات فعليك تغيير كلمة المرور حتى لو لم يحدث شيء غريب."
+ },
+ {
+  "lang": "ar",
+  "hash": "09d8b7a6",
+  "text": "صحيح. قد ينتظر القراصنة قبل التحرك: غيّرها بسرعة وفعّل المصادقة الثنائية."
+ },
+ {
+  "lang": "ar",
+  "hash": "39200cc7",
+  "text": "يجب تغيير كلمة المرور كل يوم لتبقى آمنًا."
+ },
+ {
+  "lang": "ar",
+  "hash": "f9151b6d",
+  "text": "خطأ. غيّرها عند الشك أو التسرّب. التغيير المستمر يدفع لاختيار كلمات ضعيفة."
+ },
+ {
+  "lang": "ar",
+  "hash": "bf2171d0",
+  "text": "اسم حيوانك الأليف وتاريخ ميلادك المنشوران على الإنترنت قد يساعدان في تخمين كلمات مرورك."
+ },
+ {
+  "lang": "ar",
+  "hash": "78a0606c",
+  "text": "صحيح. حسابك العام قائمة أدلة بالنسبة للقرصان."
+ },
+ {
+  "lang": "ar",
+  "hash": "5ab360a8",
+  "text": "مدير كلمات المرور خزنة محمية بكلمة مرور رئيسية واحدة قوية."
+ },
+ {
+  "lang": "ar",
+  "hash": "f06c0036",
+  "text": "صحيح. تحفظ جملة مرور واحدة وهو يحفظ الباقي."
+ },
+ {
+  "lang": "ar",
+  "hash": "8fe0c2b4",
+  "text": "قد يطلب الدعم الفني رمز الأرقام الستة المرسل بالرسالة للتحقق من هويتك."
+ },
+ {
+  "lang": "ar",
+  "hash": "be0972ec",
+  "text": "خطأ. هذا الرمز سري: لن يطلبه منك أي طرف جدّي أبدًا."
+ },
+ {
+  "lang": "ar",
+  "hash": "813c7b9e",
+  "text": "تنشئ كلمة مرور لحساب جديد."
+ },
+ {
+  "lang": "ar",
+  "hash": "9213a4a0",
+  "text": "تستعمل نفس كلمة المرور للعبتك وبريدك."
+ },
+ {
+  "lang": "ar",
+  "hash": "8a08da75",
+  "text": "يعرض عليك تطبيق رمزًا إضافيًا لحماية حسابك."
+ },
+ {
+  "lang": "ar",
+  "hash": "83f27a60",
+  "text": "ستنشر اسم قطتك وتاريخ ميلادك."
+ },
+ {
+  "lang": "ar",
+  "hash": "eaedae4e",
+  "text": "كلمة مرورك هي football2024."
+ },
+ {
+  "lang": "ar",
+  "hash": "978b888a",
+  "text": "لديك 40 حسابًا ولا تستطيع حفظ كل كلمات المرور."
+ },
+ {
+  "lang": "ar",
+  "hash": "8caa961c",
+  "text": "شخص غريب يطلب الرمز الذي وصلك برسالة نصية."
+ },
+ {
+  "lang": "ar",
+  "hash": "ec14ac1b",
+  "text": "قصصك تُظهر مدرستك وحيّك وقطتك."
+ },
+ {
+  "lang": "ar",
+  "hash": "beca5bcb",
+  "text": "الطول والعشوائية: جملة من 5 كلمات أو 14 رمزًا فأكثر."
+ },
+ {
+  "lang": "ar",
+  "hash": "ccf74c54",
+  "text": "لا. القراصنة يعرفون هذه الحيل: تُكسر في أقل من ثانية."
+ },
+ {
+  "lang": "ar",
+  "hash": "ed71cd19",
+  "text": "إن تسرّب موقع واحد تبقى بقية حساباتك محمية."
+ },
+ {
+  "lang": "ar",
+  "hash": "18542dec",
+  "text": "بمدير كلمات المرور: تحفظ جملة مرور واحدة فقط."
+ },
+ {
+  "lang": "ar",
+  "hash": "0be05563",
+  "text": "تضيف قفلًا ثانيًا: حتى مع كلمة مرورك يبقى القرصان محجوبًا."
+ },
+ {
+  "lang": "ar",
+  "hash": "9c42c475",
+  "text": "أبدًا. هذا الرمز مفتاح حسابك ولا يطلبه أي طرف جدّي."
+ },
+ {
+  "lang": "ar",
+  "hash": "e44b55a7",
+  "text": "اسم قريب، حيوانك الأليف، تاريخ ميلادك، مدينتك، فريقك."
+ },
+ {
+  "lang": "ar",
+  "hash": "5ca0ed14",
+  "text": "غيّر كلمة مرور بريدك أولًا ثم بقية الحسابات وفعّل المصادقة الثنائية."
+ },
+ {
+  "lang": "ar",
+  "hash": "5815d233",
+  "text": "ظهر بريدك الإلكتروني وكلمة مرورك Biscuit2008 في تسرّب للبيانات. تستعمل نفس كلمة المرور لبريدك وإنستغرام وحساب الألعاب."
+ },
+ {
+  "lang": "ar",
+  "hash": "f5d36cee",
+  "text": "ماذا تؤمّن أولًا؟"
+ },
+ {
+  "lang": "ar",
+  "hash": "80cd5d52",
+  "text": "البريد هو المفتاح الرئيسي: من يتحكم فيه يستطيع إعادة تعيين كل الحسابات."
+ },
+ {
+  "lang": "ar",
+  "hash": "f59e07b0",
+  "text": "مفيد، لكن إن سُرق البريد يستعيد القرصان إنستغرام متى شاء."
+ },
+ {
+  "lang": "ar",
+  "hash": "357d4b0a",
+  "text": "الانتظار يمنح القرصان أسبقية التصرف."
+ },
+ {
+  "lang": "ar",
+  "hash": "90b42589",
+  "text": "SecuTeam: نشاط مشبوه على حسابك. لإلغائه، أرسل الرمز المكوّن من 6 أرقام الذي وصلك للتو.. وصلتك رسالة. ماذا تفعل؟"
+ },
+ {
+  "lang": "ar",
+  "hash": "70bd85ef",
+  "text": "هذا الرمز هو مفتاح حسابك. لا أحد جدّي يطلبه منك."
+ },
+ {
+  "lang": "ar",
+  "hash": "f8787e3c",
+  "text": "فخ! القرصان هو من طلب الرمز للتو: ستفتح له الباب بنفسك."
+ },
+ {
+  "lang": "ar",
+  "hash": "18f5f6ea",
+  "text": "روابط هذه الرسائل تقود غالبًا إلى صفحات مزيفة تسرق بياناتك."
+ },
+ {
+  "lang": "ar",
+  "hash": "0689b180",
+  "text": "ستغيّر كلمات مرورك. كيف؟"
+ },
+ {
+  "lang": "ar",
+  "hash": "a9902171",
+  "text": "قوية نعم، لكنها مكررة: تسرّب واحد ويسقط كل شيء مجددًا."
+ },
+ {
+  "lang": "ar",
+  "hash": "ec64cdaf",
+  "text": "القراصنة يجرّبون هذه التنويعات تلقائيًا أولًا."
+ },
+ {
+  "lang": "ar",
+  "hash": "ebe8b272",
+  "text": "الخطوة الأخيرة: المصادقة الثنائية. أيها تختار؟"
+ },
+ {
+  "lang": "ar",
+  "hash": "dea3b538",
+  "text": "قوية جدًا: الرمز يبقى في هاتفك ولا يمكن تحويله بسهولة."
+ },
+ {
+  "lang": "ar",
+  "hash": "05968571",
+  "text": "أفضل من لا شيء، لكن الرسالة قد تُعترض أو تُحوَّل (استنساخ الشريحة)."
+ },
+ {
+  "lang": "ar",
+  "hash": "6ef250e9",
+  "text": "حتى كلمة المرور الجيدة قد تتسرّب. المصادقة الثنائية تصدّ القرصان رغم ذلك."
+ }
+]

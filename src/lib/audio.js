@@ -1,5 +1,6 @@
 /* Synthesized sound effects (Web Audio) + optional read-aloud voice (speechSynthesis). No audio files. */
 import confettiLib from 'canvas-confetti';
+import { clean, hash } from './hash.js';
 
 let ctx = null, soundOn = true;
 const ac = () => {
@@ -29,7 +30,6 @@ export const Sfx = {
 
 let voiceOn = false;
 const VMAP = { fr: 'fr-FR', en: 'en-US', ar: 'ar-SA' };
-const clean = s => String(s).replace(/<[^>]+>/g, '').replace(/[\u{1F000}-\u{1FFFF}☀-➿️]/gu, '').replace(/[«»“”]/g, '');
 const hasTTS = () => 'speechSynthesis' in window;
 const voices = () => (hasTTS() ? speechSynthesis.getVoices() : []);
 if (hasTTS()) { voices(); speechSynthesis.addEventListener('voiceschanged', voices); }
@@ -38,20 +38,31 @@ const findVoice = lang => {
   const c = voices().filter(v => v.lang.replace('_', '-').toLowerCase().startsWith(lang));
   return c.find(v => /natural|online|google/i.test(v.name)) || c[0] || null;
 };
+let current = null;
+const stopAll = () => { if (current) { current.pause(); current = null; } if (hasTTS()) speechSynthesis.cancel(); };
+// Pre-recorded neural voices (public/audio/<lang>/<hash>.mp3) work on every device; the browser voice is only a fallback.
+const playRecording = (text, lang) => new Promise(resolve => {
+  const a = new Audio(`${import.meta.env.BASE_URL}audio/${lang}/${hash(clean(text))}.mp3`);
+  a.onerror = () => resolve(false);
+  a.onended = () => { if (current === a) current = null; };
+  current = a;
+  a.play().then(() => resolve(true)).catch(() => resolve(false));
+});
 export const Voice = {
+  setOn: v => { voiceOn = v; if (!v) stopAll(); },
   has: lang => !!findVoice(lang),
-  setOn: v => { voiceOn = v; if (!v && hasTTS()) speechSynthesis.cancel(); },
-  /** Returns false when nothing could be spoken (no voice for this language). */
-  say(text, lang, force) {
-    if ((!voiceOn && !force) || !hasTTS()) return false;
-    const v = findVoice(lang);
+  /** Resolves false when nothing could be spoken. */
+  async say(text, lang, force) {
+    if (!voiceOn && !force) return true;
+    stopAll();
+    if (await playRecording(text, lang)) return true;
+    const v = hasTTS() && findVoice(lang);
     if (!v) return false;
-    speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(clean(text)); u.voice = v; u.lang = v.lang;
     setTimeout(() => speechSynthesis.speak(u), 60);
     return true;
   },
-  stop() { if (hasTTS()) speechSynthesis.cancel(); }
+  stop: stopAll
 };
 
 export function confetti() {

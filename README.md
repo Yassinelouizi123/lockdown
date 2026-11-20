@@ -34,3 +34,9 @@ Un seul QR code suffit : génère-le à partir de l'adresse du site (`https://<t
 - Textes de l'interface : `src/lib/strings.js`
 - Couleurs / thème : `src/index.css` (thème daisyUI `lockdown`)
 - Estimateur de robustesse des mots de passe : `src/lib/engine.js` (heuristique pédagogique : 10 milliards d'essais/seconde)
+
+## Voix (lecture audio)
+
+Les phrases lues à voix haute sont des enregistrements pré-générés (`public/audio/<langue>/*.mp3`, voix neurales FR/EN/AR),
+donc la voix fonctionne sur tous les appareils, même sans voix arabe installée.
+Si tu modifies un texte lu : `node scripts/make-manifest.mjs` puis `python scripts/gen-audio.py` (nécessite `pip install edge-tts`), puis commit les nouveaux fichiers.
