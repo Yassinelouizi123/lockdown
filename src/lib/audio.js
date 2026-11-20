@@ -42,7 +42,7 @@ let current = null;
 const stopAll = () => { if (current) { current.pause(); current = null; } if (hasTTS()) speechSynthesis.cancel(); };
 // Pre-recorded neural voices (public/audio/<lang>/<hash>.mp3) work on every device; the browser voice is only a fallback.
 const playRecording = (text, lang) => new Promise(resolve => {
-  const a = new Audio(`${import.meta.env.BASE_URL}audio/${lang}/${hash(clean(text))}.mp3`);
+  const a = new Audio(`${import.meta.env.BASE_URL}audio/${lang}/${hash(clean(text))}.mp3?v=2`);
   a.onerror = () => resolve(false);
   a.onended = () => { if (current === a) current = null; };
   current = a;

@@ -6,6 +6,7 @@ import edge_tts
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VOICES = {"fr": "fr-FR-DeniseNeural", "en": "en-US-AriaNeural", "ar": "ar-SA-ZariyahNeural"}
+RATES = {"fr": "-15%", "en": "-12%", "ar": "-20%"}  # slower = easier to follow
 
 async def one(sem, item):
     path = os.path.join(ROOT, "public", "audio", item["lang"], item["hash"] + ".mp3")
@@ -15,7 +16,7 @@ async def one(sem, item):
     async with sem:
         for attempt in range(3):
             try:
-                await edge_tts.Communicate(item["text"], VOICES[item["lang"]]).save(path)
+                await edge_tts.Communicate(item["text"], VOICES[item["lang"]], rate=RATES[item["lang"]]).save(path)
                 return True
             except Exception as e:  # network hiccup: retry
                 err = e
